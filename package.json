@@ -1,31 +1,33 @@
 {
-  "name": "iconv-x64",
-  "version": "2.1.7",
-  "description": "Precompiled release versions for x64 architectures of the iconv library for node.js.",
-  "main": "./lib/iconv",
-  "author": {
-    "name": "Web Compliance Center",
-    "email": "webcc@fit.fraunhofer.de"
-  },
-  "dependencies": {
-  },
-  "devDependencies": {
-    "tap": "~0.4.8"
-  },
-  "licenses": [
-    {
-      "type": "Apache License",
-      "url": "https://github.com/webcc/iconv-x64/blob/master/LICENSE.md"
-    }
-  ],
-  "repository": {
-    "type" : "git",
-    "url" : "https://github.com/webcc/iconv-x64.git"
-  },
-  "readmeFilename": "README.md",
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "_id": "iconv-x64@2.1.7",
-  "_from": "iconv-x64@"
+    "name": "iconv-x64",
+    "version": "2.1.8",
+    "description": "Precompiled release versions for x64 architectures of the iconv library for node.js.",
+    "main": "./lib/iconv",
+    "author": {
+        "name": "Web Compliance Center",
+        "email": "webcc@fit.fraunhofer.de"
+    },
+    "dependencies": {
+        "nan": "1.1.2"
+        "nan": "1.1.2"
+    },
+    "devDependencies": {
+        "tap": "~0.4.8"
+    },
+    "licenses": [
+        {
+            "type": "Apache License",
+            "url": "https://github.com/webcc/iconv-x64/blob/master/LICENSE.md"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/webcc/iconv-x64.git"
+    },
+    "readmeFilename": "README.md",
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "_id": "iconv-x64@2.1.8",
+    "_from": "iconv-x64@"
 }
