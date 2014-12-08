@@ -1,7 +1,7 @@
 {
   "name": "iconv-x64",
   "description": "Precompiled release versions for x64 architectures of the iconv library for node.js.",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "author": {
     "name": "Web Compliance Center",
     "email": "webcc@fit.fraunhofer.de"
