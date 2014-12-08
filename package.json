@@ -1,0 +1,32 @@
+{
+  "name": "iconv-x64",
+  "description": "Precompiled release versions for x64 architectures of the iconv library for node.js.",
+  "version": "2.1.4",
+  "author": {
+    "name": "Web Compliance Center",
+    "email": "webcc@fit.fraunhofer.de"
+  },
+  "dependencies": {
+    "iconv": "2.1.4"
+  },
+  "devDependencies": {
+    "tap": "~0.4.8"
+  },
+  "main": "index",
+  "licenses": [
+    {
+      "type": "Apache License",
+      "url": "https://github.com/webcc/iconv-x64/blob/master/LICENSE.md"
+    }
+  ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/webcc/iconv-x64.git"
+  },
+  "readmeFilename": "README.md",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "_id": "iconv-x64@2.1.4",
+  "_from": "iconv-x64@"
+}
