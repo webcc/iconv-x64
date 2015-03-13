@@ -37,11 +37,6 @@ using v8::Persistent;
 using v8::String;
 using v8::Value;
 
-// TODO(bnoordhuis) Move back into Iconv sometime.  Still broken in nan 1.1.1.
-NAN_WEAK_CALLBACK(WeakCallback)
-{
-  delete data.GetParameter();
-}
 
 struct Iconv
 {
@@ -57,6 +52,12 @@ struct Iconv
   {
     iconv_close(conv_);
   }
+
+  NAN_WEAK_CALLBACK(WeakCallback)
+  {
+    delete data.GetParameter();
+  }
+
 
   static void Initialize(Handle<Object> obj)
   {
@@ -85,7 +86,7 @@ struct Iconv
     Iconv* iv = new Iconv(conv);
     Local<Object> obj = NanNew<ObjectTemplate>(object_template)->NewInstance();
     NanSetInternalFieldPointer(obj, 0, iv);
-    NanMakeWeakPersistent(obj, iv, WeakCallback<Object, Iconv>);
+    NanMakeWeakPersistent(obj, iv, &WeakCallback);
     NanReturnValue(obj);
   }
 
@@ -118,8 +119,8 @@ struct Iconv
     }
     input_consumed -= input_size;
     output_consumed -= output_size;
-    rc->Set(0, NanNew<Integer>(input_consumed));
-    rc->Set(1, NanNew<Integer>(output_consumed));
+    rc->Set(0, NanNew<Integer>(static_cast<uint32_t>(input_consumed)));
+    rc->Set(1, NanNew<Integer>(static_cast<uint32_t>(output_consumed)));
     NanReturnValue(NanNew<Integer>(errorno));
   }
 
