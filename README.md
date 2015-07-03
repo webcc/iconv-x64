@@ -1,7 +1,8 @@
 iconv-x64
 =========
 
-Precompiled release versions for x64 architectures of the iconv library for node.js.
+Precompiled release versions for x64 architectures of the iconv (version 2.1.8)
+library for node.js.
 
 See:
 

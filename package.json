@@ -1,45 +1,11 @@
 {
     "name": "iconv-x64",
-    "version": "2.1.9",
+    "version": "2.1.10",
     "description": "Precompiled release versions for x64 architectures of the iconv library for node.js.",
     "main": "./lib/iconv",
     "author": {
         "name": "Web Compliance Center",
         "email": "webcc@fit.fraunhofer.de"
-    },
-    "dependencies": {
-        "nan": "1.6.2"
-    },
-    "devDependencies": {
-        "tap": "~0.4.8"
-    },
-    "licenses": [
-        {
-            "type": "Apache License",
-            "url": "https://github.com/webcc/iconv-x64/blob/master/LICENSE.md"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/webcc/iconv-x64.git"
-    },
-    "engines": {
-        "node": ">=0.12.0"
-    },
-    "_id": "iconv-x64@2.1.9",
-    "_from": "iconv-x64@*",
-    "gitHead": "061efb8f0a75c383d878f21a0b6d7fed36ea02ee",
-    "bugs": {
-        "url": "https://github.com/webcc/iconv-x64/issues"
-    },
-    "homepage": "https://github.com/webcc/iconv-x64",
-    "scripts": {},
-    "_shasum": "151b3f685068342b33d0f702d6a3f7fd02a7fd2c",
-    "_npmVersion": "2.1.9",
-    "_nodeVersion": "0.12.0",
-    "_npmUser": {
-        "name": "webcc",
-        "email": "webcc-dev@fit.fraunhofer.de"
     },
     "maintainers": [
         {
@@ -47,10 +13,38 @@
             "email": "webcc-dev@fit.fraunhofer.de"
         }
     ],
+    "directories": {},
+    "dependencies": {},
+    "devDependencies": {},
+    "license": {
+        "type": "Apache-2.0",
+        "url": "https://github.com/webcc/iconv-x64/blob/master/LICENSE.md"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/webcc/iconv-x64.git"
+    },
+    "engines": {
+        "node": ">=0.12.0"
+    },
+    "cpu": [ "x64" ],
+    "os": [ "win32", "darwin", "linux" ],
+    "homepage": "https://github.com/webcc/iconv-x64",
+    "scripts": {},
+    "bugs": {
+        "url": "https://github.com/webcc/iconv-x64/issues"
+    },
+    "gitHead": "061efb8f0a75c383d878f21a0b6d7fed36ea02ee",
     "dist": {
         "shasum": "151b3f685068342b33d0f702d6a3f7fd02a7fd2c",
-        "tarball": "http://registry.npmjs.org/iconv-x64/-/iconv-x64-2.1.9.tgz"
+        "tarball": "http://registry.npmjs.org/iconv-x64/-/iconv-x64-2.1.10.tgz"
     },
-    "directories": {},
-    "_resolved": "https://registry.npmjs.org/iconv-x64/-/iconv-x64-2.1.9.tgz"
+    "_shasum": "151b3f685068342b33d0f702d6a3f7fd02a7fd2c",
+    "_npmVersion": "2.1.10",
+    "_nodeVersion": "0.12.0",
+    "_npmUser": {
+        "name": "webcc",
+        "email": "webcc-dev@fit.fraunhofer.de"
+    },
+    "_resolved": "https://registry.npmjs.org/iconv-x64/-/iconv-x64-2.1.10.tgz"
 }
